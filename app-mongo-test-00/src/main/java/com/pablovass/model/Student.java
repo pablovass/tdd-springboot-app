@@ -18,5 +18,5 @@ public class Student {
     }
     //el studiante aprobo
    static Predicate<Student>isApproved= student -> student.getCalificaciones()>=6.0;
-    //predicados para validar datos 
+    //predicados para validar datos +
 }
