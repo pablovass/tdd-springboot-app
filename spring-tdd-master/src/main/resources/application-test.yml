@@ -1,0 +1,13 @@
+pessoa:
+  nome: Pessoa 1
+  cpf: 25242548010
+
+server:
+  port: 8081
+
+
+spring:
+  mongodb:
+    embedded:
+      version: 3.0.1
+
