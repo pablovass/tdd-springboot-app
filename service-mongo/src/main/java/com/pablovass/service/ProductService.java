@@ -5,7 +5,7 @@ import com.pablovass.entity.Product;
 
 import java.util.List;
 
-public interface Productservice {
+public interface ProductService {
     public List<Product> listAllProduct();
     public Product getProduct(Long id);
 
