@@ -1,15 +1,13 @@
 package br.com.coffeeandit.springtdd.domain;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Data
 @EqualsAndHashCode(of = "id")
-@Builder
+@Builder @AllArgsConstructor @NoArgsConstructor
 public class Pessoa {
 
     @Id
