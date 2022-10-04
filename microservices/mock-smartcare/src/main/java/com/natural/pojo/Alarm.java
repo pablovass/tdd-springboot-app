@@ -20,8 +20,8 @@ import java.util.UUID;
 public class Alarm implements Serializable {
 
 
-    @Id @JsonIgnore(value = true)
-    private String id;
+    //@Id @JsonIgnore(value = true)
+   // private String id;
 
 
  //  @JsonIgnore(value = true)

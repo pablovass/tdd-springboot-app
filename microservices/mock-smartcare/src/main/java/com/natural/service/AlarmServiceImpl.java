@@ -33,14 +33,28 @@ public class AlarmServiceImpl implements AlarmService {
     }
 
     @Override
-    public Alarm getAlarmByName(String name) {
-        return alarmRepository.findItemByName(name);
+    public List <Alarm> getReturnCode(String returnCode){
+        return  alarmRepository.findByReturnCode(returnCode);
+    }
 
+    @Override
+    public List<Alarm> getByRetCode(String retCode) {
+        return alarmRepository.findByRetCode(retCode);
     }
 
     @Override
     public Alarm getAlarmBySiteName(String siteName) {
         return alarmRepository.findBySiteName(siteName);
+    }
+
+    @Override
+    public List<Alarm> getByRetCodeAndSiteName(String retCode, String siteName) {
+        return alarmRepository.findByRetCodeAndSiteName(retCode,siteName);
+    }
+
+    @Override
+    public List<Alarm> getByMSISDNIs(String mSISDN) {
+        return alarmRepository.findByMSISDNIs(mSISDN);
     }
 
 

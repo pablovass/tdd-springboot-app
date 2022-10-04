@@ -16,8 +16,13 @@ public interface AlarmService {
 
     Alarm getAlarm(String id);
 
-    Alarm getAlarmByName(String name);
-
     Alarm getAlarmBySiteName(String name);
+
+    public List<Alarm> getReturnCode(String siteName);
+
+    List<Alarm> getByRetCode(String retCode);
+
+    List<Alarm> getByRetCodeAndSiteName(String retCode ,String siteName);
+    List<Alarm>getByMSISDNIs(String mSISDN);
 }
 
