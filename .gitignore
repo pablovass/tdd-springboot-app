@@ -1,37 +1,64 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Spring Boot Microservices with TDD
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+This repository contains a collection of Spring Boot microservices developed following the Test-Driven Development (TDD) methodology. Each microservice demonstrates different aspects of development and testing, utilizing various technologies and frameworks.
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+## Features
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+- Multiple Spring Boot microservices
+- Focus on Test-Driven Development (TDD)
+- Examples of MongoDB integration
+- Integration testing with Karate
+- Behavior-driven testing with Cucumber
+- Use of Maven and Gradle as build systems
+- Unit testing with JUnit and Spock
 
-### VS Code ###
-.vscode/
+## Prerequisites
+
+- Java JDK 11 or higher
+- Maven
+- Gradle
+- MongoDB
+
+## Project Structure
+
+Each folder in the repository root represents an independent microservice. Within each microservice, you'll find:
+
+- Source code in `src/main/java`
+- Tests in `src/test/java`
+- Configuration files for Maven or Gradle
+
+## Running the Projects
+
+To run a specific microservice:
+
+1. Navigate to the microservice folder
+2. Execute the corresponding command based on the build system:
+
+   With Maven:
+   ```
+   mvn spring-boot:run
+   ```
+
+   With Gradle:
+   ```
+   ./gradlew bootRun
+   ```
+
+## Running Tests
+
+To run tests for a microservice:
+
+With Maven:
+```
+mvn test
+```
+
+With Gradle:
+```
+./gradlew test
+```
+
+## Contributions
+
+Contributions are welcome. Please ensure you follow TDD principles when adding new features or microservices.
+
